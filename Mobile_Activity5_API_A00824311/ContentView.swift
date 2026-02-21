@@ -22,37 +22,47 @@ struct ContentView: View {
         // Vistas de Lista y Detalle
         NavigationStack {
             
-            ScrollView {
+            ZStack {
                 
-                // Usamos LazyVGrid para mejor uso de memoria
-                LazyVGrid(columns: columns, spacing: 15) {
+                LinearGradient(colors: [Color.red.opacity(0.15), Color(UIColor.systemGroupedBackground)], startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
+                
+                if pokemonVM.isLoading {
+                    ProgressView("Buscando Pokémon")
+                        .controlSize(.large)
+                } else if let errorMsg = pokemonVM.errorMsg {
                     
-                    //Iteramos del array de Pokémon que nos devuelve el ViewModel
-                    ForEach(pokemonVM.arrPokemon) { item in
+                    VStack(spacing: 20) {
+                        Image(systemName: "wifi.exclamationmark")
+                            .font(.system(size: 50))
+                            .foregroundStyle(.red)
                         
-                        //Manejo de la navegación de Lista a Detalle
-                        NavigationLink {
-                            PokemonDetailView(pokemon: item)
-                        } label: {
-                            PokemonCardView(pokemon: item)
+                        Text(errorMsg)
+                            .font(.headline)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal)
+                    }
+                } else {
+                    ScrollView {
+                        
+                        LazyVGrid(columns: columns, spacing: 15) {
+                            ForEach(pokemonVM.arrPokemon) { item in
+                                NavigationLink {
+                                    PokemonDetailView(pokemon: item)
+                                } label: {
+                                    PokemonCardView(pokemon: item)
+                                }
+                                .buttonStyle(.plain)
+                            }
                         }
-                        .buttonStyle(.plain)
+                        .padding(15)
                     }
                 }
-                .padding(15)
             }
             .navigationTitle("Pokédex")
-            .background(
-                LinearGradient(colors: [Color.red.opacity(0.15), Color(UIColor.systemGroupedBackground)], startPoint: .top, endPoint: .bottom)
-            )
-            //Llamada a la API
             .task {
-                do {
-                    //Llamamos a la función get para traernos la lista al momento de cargar la vista
-                    try await pokemonVM.getPokemon()
-                } catch {
-                    // Manejo de error sencillo catcheando el error de una tarea asíncrona
-                    print("Hubo un error al cargar la API")
+                if pokemonVM.arrPokemon.isEmpty {
+                    await pokemonVM.getPokemon()
                 }
             }
         }
