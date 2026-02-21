@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Chimchar",
+        "pokedexNumber": 390,
+        "description": "Its backside is in flames. The flame burns weakly when it sleeps.",
+        "imageName": ["chimchar", "chimchar_2", "chimchar_3"]
+    },
+    {
+        "name": "Pikachu",
+        "pokedexNumber": 25,
+        "description": "When it encounters something new, it shocks it with electricity.",
+        "imageName": ["pikachu", "pikachu_2", "pikachu_3"]
+    },
+    {
+        "name": "Buizel",
+        "pokedexNumber": 418,
+        "description": "It inflates the flotation sac around its neck and pokes its head out of the water to see.",
+        "imageName": ["buizel", "buizel_2", "buizel_3"]
+    },
+    {
+        "name": "Linoone",
+        "pokedexNumber": 264,
+        "description": "It charges prey at speeds over 60 mph. However, because it can only run straight, it often fails.",
+        "imageName": ["linoone", "linoone_2", "linoone_3"]
+    },
+    {
+        "name": "Victini",
+        "pokedexNumber": 494,
+        "description": "This Pokémon brings victory. It is said that Trainers with Victini always win.",
+        "imageName": ["victini", "victini_2", "victini_3"]
+    },
+    {
+        "name": "Shiftry",
+        "pokedexNumber": 275,
+        "description": "A Pokémon that was feared as a forest guardian. It can read the foe's mind and take preemptive action.",
+        "imageName": ["shiftry", "shiftry_2", "shiftry_3"]
+    },
+    {
+        "name": "Croagunk",
+        "pokedexNumber": 453,
+        "description": "Inflating its poison sacs, it makes an eerie sound to intimidate opponents.",
+        "imageName": ["croagunk", "croagunk_2", "croagunk_3"]
+    },
+    {
+        "name": "Gigalith",
+        "pokedexNumber": 526,
+        "description": "Compressing the energy from its internal core lets it fire off an attack capable of blowing away a mountain.",
+        "imageName": ["gigalith", "gigalith_2", "gigalith_3"]
+    },
+    {
+        "name": "Gliscor",
+        "pokedexNumber": 472,
+        "description": "It observes prey while hanging inverted from branches. When the chance presents itself, it swoops!",
+        "imageName": ["gliscor", "gliscor_2", "gliscor_3"]
+    },
+    {
+        "name": "Staraptor",
+        "pokedexNumber": 398,
+        "description": "It has a savage nature. It will courageously challenge foes that are much larger.",
+        "imageName": ["staraptor", "staraptor_2", "staraptor_3"]
+    },
+    {
+        "name": "Crustle",
+        "pokedexNumber": 558,
+        "description": "Competing for territory, Crustle fight viciously. The one whose boulder is broken is the loser.",
+        "imageName": ["crustle", "crustle_2", "crustle_3"]
+    },
+    {
+        "name": "Crobat",
+        "pokedexNumber": 169,
+        "description": "Having four wings allows it to fly more quietly and faster than ever.",
+        "imageName": ["crobat", "crobat_2", "crobat_3"]
+    },
+    {
+        "name": "Darkrai",
+        "pokedexNumber": 491,
+        "description": "It can lull people to sleep and make them dream. It is active during nights of the new moon.",
+        "imageName": ["darkrai", "darkrai_2", "darkrai_3"]
+    },
+    {
+        "name": "Giratina",
+        "pokedexNumber": 487,
+        "description": "A Pokémon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery.",
+        "imageName": ["giratina", "giratina_2", "giratina_3"]
+    },
+    {
+        "name": "Snorunt",
+        "pokedexNumber": 361,
+        "description": "It is said that a home visited by a Snorunt will prosper. It can handle snow of -150 degrees Fahrenheit.",
+        "imageName": ["snorunt", "snorunt_2", "snorunt_3"]
+    },
+    {
+        "name": "Bastiodon",
+        "pokedexNumber": 411,
+        "description": "Any frontal attack is repulsed. It is a docile Pokémon that feeds on grass and berries.",
+        "imageName": ["bastiodon", "bastiodon_2", "bastiodon_3"]
+    },
+    {
+        "name": "Salamence",
+        "pokedexNumber": 373,
+        "description": "It becomes uncontrollable if it is enraged. It destroys everything with claws and fire.",
+        "imageName": ["salamence", "salamence_2", "salamence_3"]
+    },
+    {
+        "name": "Whimsicott",
+        "pokedexNumber": 547,
+        "description": "Like the wind, it can slip through any gap, no matter how small. It leaves balls of white fluff behind.",
+        "imageName": ["whimsicott", "whimsicott_2", "whimsicott_3"]
+    }
+]
