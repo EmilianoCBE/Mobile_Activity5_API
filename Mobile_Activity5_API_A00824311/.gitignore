@@ -1,0 +1,38 @@
+# --- macOS (Archivos basura del sistema) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Xcode (Archivos de compilación y personales) ---
+# Carpeta de build (donde se guarda la app compilada temporalmente)
+build/
+DerivedData/
+
+# Archivos de configuración de usuario (tus pestañas abiertas, breakpoints, etc.)
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+xcuserdata/
+
+# Archivos internos del proyecto que son personales
+*.xccheckout
+*.moved-aside
+*.xucrecover
+*.wrappers
+
+# --- Swift Package Manager ---
+# Si usas paquetes de Swift, estas carpetas se generan solas
+.build/
+.swiftpm/xcode/
+Packages/
+Package.pins
+Package.resolved
+
+# --- Simulador ---
+# Logs de crasheos del simulador
+*.crash
+
+# --- Otros ---
+# Archivos temporales de pruebas
+*.testresult
